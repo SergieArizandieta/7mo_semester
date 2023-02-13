@@ -28,5 +28,5 @@ if [ "$(echo $response | jq -r '.message')" != "Not Found" ]; then #Validando qu
    echo $msg >> "$crr_path/saludos.log" #Agreagando al contenido anterior el mensaje creado (crea el .log de ser necesario)
    
 else
-   echo -e "\e[0;31mNo se puedo obtener informacion sobre: $GITHUB_USER\e[0m" #Imprimiendo si el usuario ingresado no existiera
+   echo -e "\e[0;31mNo se pudo obtener informacion sobre: $GITHUB_USER\e[0m" #Imprimiendo si el usuario ingresado no existiera
 fi
