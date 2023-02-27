@@ -123,5 +123,7 @@ FROM nginx:1.22.1-alpine as runner
 COPY --from=compilacion /opt/app/build /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
 ```
+## **Nota Importante:**
+Estos archivos deben estar dentro de la carpeta frontend, estos estan afuera solos son para mostrar los archivos que fueron modificados ó agregados.
 
 
