@@ -34,19 +34,15 @@ http {
   '"$http_user_agent" "$http_x_forwarded_for"';
   access_log  /var/log/nginx/access.log  main;
   sendfile        on;
-  #tcp_nopush     on;
-  
   keepalive_timeout  65;
-  #gzip  on;
-  #include /etc/nginx/conf.d/*.conf;
-server {
-  listen 80;
-  location / {
-    root   /usr/share/nginx/html;
-    index  index.html index.htm;
-    try_files $uri $uri/ /index.html;
-  }
-}
+   server {
+   listen 80;
+   location / {
+      root   /usr/share/nginx/html;
+      index  index.html index.htm;
+      try_files $uri $uri/ /index.html;
+   }
+   }
 }
 ```
 
