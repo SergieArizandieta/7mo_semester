@@ -1,0 +1,9 @@
+[Unit]
+Description=Saludo y fecha actual
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bash /home/sergiearizandieta/servicio/saludo.sh
+
+[Install]
+WantedBy=multi-user.target
