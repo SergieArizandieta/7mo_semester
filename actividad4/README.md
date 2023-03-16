@@ -1,8 +1,8 @@
-## Actividad 4 - Proceso de creación / instalción del servicio
+## Actividad 4 - Proceso de creación / instalación del servicio
 
 ### Pasos:
 1. Se debe crear el archivo saludo.service y saludo.sh
-2. El archivo .sh es el que se ejecutara cuando inicie el proceso, por lo mismo de beria incluir aqui el saludo:
+2. El archivo .sh es el que se ejecutara cuando inicie el proceso, por lo mismo de vería incluir aquí el saludo:
 ```
 #!/usr/bin/bash
 echo "Hola, soy Sergie Daniel Arizandieta Yol y hoy es $(date +%A), $(date +%d) de $(date +%B) de $(date +%Y)"
@@ -56,10 +56,13 @@ sudo journalctl -u saludo.service
 
 <!-- Ya que en la mayoría de las distribuciones Linux modernas, el registro de sistema se encuentra en /var/log/syslog o en /var/log/messages. -->
 ```
-En mi caso la salida fue:
+En mi caso la salida en una máquina virtual de google con Ubuntu fue:
 
 ```
 Mar 16 22:39:00 sopes systemd[1]: Started Saludo y fecha actual.
 Mar 16 22:39:00 sopes bash[1035]: Hola, soy Sergie Daniel Arizandieta Yol y hoy es Thursday, 16 de March de 2023
 Mar 16 22:39:00 sopes systemd[1]: saludo.service: Deactivated successfully.
 ```
+
+![Logo](output.PNG)
+
